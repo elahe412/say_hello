@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM nexus.nextaibox.com/python:3
+FROM ${DOCKER_REGISTERY_PATH}python:3
 ENV PYTHONUNBUFFERED=1
 WORKDIR /code
 COPY requirements.txt /code/
